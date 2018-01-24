@@ -25,6 +25,8 @@ public class battleShip {
 		System.out.println("Please input a y-coordinate.");
 		guessRow = input.nextInt(); 
 		
+		row[guessRow][guessCol]="x"; 
+		
 		if (guessRow==shipRow && guessCol==shipCol) {
 			System.out.println("You sunk my battle ship!");
 		} else {
